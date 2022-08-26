@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0
+}
+
+/**
+the blur effect using css
+*/
+.bg{
+    background: url('img.jpeg') no-repeat center center/cover; /* bg-repeat: no=repeat
+                                                        bg-position: center center cover */
+    position: absolute;
+    top: -30px; /*to remove white spaces around the img on top*/
+    left: -30px;/*to remove white spaces around the img on left*/
+    width: calc(100vw + 60px);/*to remove white spaces around the img on sides*/
+    height: calc(100vh + 60px);
+    z-index: -1; /*img should be behind the text*/
+    filter :blur(0px); /*adds blur effect the more the value the more the blur is applied*/
+}
+
+
+
+.loading-text{
+    font-size: 50px;
+    color: rgb(245, 245, 141);
+
+}
